@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+# Objective of Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The objective of this project is to fetch data from the api endpoint and display information in a table format with the functionality of dynamic pagination, search, sort, and filter.
 
-## Available Scripts
+## Accomplishment
+To achieve the objective, I have used the React platform for front-end coding. 
 
-In the project directory, you can run:
+Initially, I started with creating a project called Test code, which creates all necessary project files. On top of that, I installed 
+MaterialUI component, which allows me to display data in a tabular form and also provides search, filter and pagination options. However I would like to note that if required, I can also do the same using custom coding. 
+To add the facebook login component, I have installed the React-Facebook-Login component. 
+Standard process which I used was I separated the API link and saved in the server.js file, so the user does not have access to the data 
+endpoint, they may only fetch and scroll through the data. 
+After fetching the API, I used the MaterialUI component and created column names and linked the API data column's with it. 
 
-### `npm start`
+Social Login Component: I have used the Facebook social login component to access the FDA Food Recall data. 
+                        If login is successful, it will take you to the page which shows the FDA data in a tabular form with pagination. 
+                        If login is unsuccessful, it will show an error message (Basically, you need to create a Facebook account)
+        
+Data: The webpage which shows the FDA Food Recall data contains dynamic pagination. 
+      Sort: If the user hovers over the Column name, there is an arrow mark which when clicked will sort the column in ascending order. 
+      Filter: There is functionality to filter data column-wise. 
+      Search: There is Search bar in the top right corner of the page which allows the user to search for any keyword. 
+      Pagination: The Pagination component enables the user to select a specific page from a range of pages. It also gives the user an 
+                  option to select the number of rows to display at a time(5,10,20). The pagination component exists in the bottom right                   corner of the webpage. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+How to run the code? 
+1) Clone the project into your local repository. 
+2) Through command prompt, move into the project folder. 
+3) "npm install" : which will install all the necessary libraries required for this project. 
+4) To run, type "npm start", which will open a webpage asking for login via facebook. 
+5) Note: During your first run, you need to allow access on Firewall pop-up. 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+If you are using VSCode: 
+Use the same steps above after opening project in VSCode. 
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
