@@ -1,6 +1,7 @@
 import { FacebookLogin } from 'react-facebook-login-component';
 import { useHistory } from "react-router-dom";
 
+// This Function component is used to allow the user to login via facebook to view the FDI Data
 function LoginComponent (){
 
   const history = useHistory();

@@ -3,6 +3,7 @@ import MaterialTable from "material-table";
 import { fetchTableData } from "../../server/server";
 import { columnsForFirstTable } from "../../shared/constants";
 
+//This component is used to view the data fetched from api as table view
 class TableComponent extends React.Component {
   constructor() {
     super();
